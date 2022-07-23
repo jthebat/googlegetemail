@@ -128,7 +128,7 @@ const kakaoCallback = async (
       { expiresIn: "1d" }
     );
        
-    res.redirect(`http://www.b-tender.com/oauth/token=${token}`);
+    res.redirect(`http://www.naver.com`);
   })(req, res, next);
 };
 
@@ -146,7 +146,7 @@ const googleCallback = (req: Request, res: Response, next: NextFunction) => {
         config.jwt.secretKey as jwt.Secret,
         { expiresIn: "1d" }
       );     
-      res.redirect(`http://www.b-tender.com/oauth/token=${token}`);
+      res.redirect(`http://www.naver.com`);
     }
   )(req, res, next);
 };
